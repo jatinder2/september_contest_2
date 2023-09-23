@@ -1,0 +1,17 @@
+*{
+    font-family: "Roboto";
+}
+#logo {
+    width: 230px;
+    height: 66px;
+    top: 24px;
+    left: -4px;
+    border-radius: 123.5px;
+    position: relative;
+}
+
+header a{
+    text-decoration: none;
+    color:#373737;
+    padding: 10px;
+}
