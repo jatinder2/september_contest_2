@@ -1,17 +1,245 @@
-*{
-    font-family: "Roboto";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "roboto";
 }
-#logo {
-    width: 230px;
-    height: 66px;
-    top: 24px;
-    left: -4px;
-    border-radius: 123.5px;
-    position: relative;
+nav {
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  padding: 15px;
+  padding-inline: 30px;
 }
 
-header a{
-    text-decoration: none;
-    color:#373737;
-    padding: 10px;
+nav > .nav-left {
+  display: flex;
+  align-items: center;
+}
+.nav-left > img {
+  height: 49px;
+}
+.verticle-line {
+  height: 20px;
+  border-left: 2px solid rgba(0, 0, 0, 0.61);
+  padding-right: 10px;
+}
+.nav-left > p {
+  color: #373737;
+  font-size: 25px;
+  font-weight: 300;
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+.nav-right > ul {
+  display: flex;
+  list-style-type: none;
+}
+.nav-right > ul > li > a {
+  text-decoration: none;
+  color: rgba(55, 55, 55, 1);
+  font-size: 22px;
+  padding-inline: 15px;
+}
+.nav-right > button {
+  border-radius: 23.5px;
+  color: #fff;
+  font-size: 30px;
+  padding: 0px 10px;
+  border: none;
+  background: #184655;
+  box-shadow: 2px 3px 2px 0px rgba(0, 0, 0, 0.25);
+}
+#hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 50px;
+  background-image: url("Rectangle\ 31.jpg");
+  width: 90vw;
+  height: 742px;
+  margin: auto;
+  padding: 20px;
+  margin-top: 30px;
+}
+.hero-left > h1 {
+  color: #184655;
+  font-size: 45px;
+  font-weight: 700;
+}
+#hashtags > ul {
+  display: flex;
+  list-style-type: none;
+  text-transform: capitalize;
+}
+#hashtags > ul > li {
+  display: flex;
+  color: #53748c;
+  font-size: 21px;
+  font-weight: 400;
+  padding-right: 50px;
+}
+#search-button {
+  display: flex;
+  width: 546px;
+  height: 78.93px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#search-button > div {
+  flex: 2;
+  display: flex;
+  align-items: center;
+}
+#search-button > div > img {
+  padding: 20px;
+}
+#search-button > div > input {
+  border: none;
+  width: 100%;
+  font-size: 22px;
+  color: #727272;
+}
+#search-button > button {
+  flex: 1;
+  border: none;
+  background-color: #184655;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+}
+#blog {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 40px;
+  background-image: url("Rectangle\ 28.png");
+  width: 90vw;
+  height: 512px;
+  margin: auto;
+  padding: 20px;
+  margin-top: 30px;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+#blog > img {
+  border-radius: 32px;
+  padding: 20px;
+}
+#blog-body {
+  padding: 10px;
+}
+#blog-body > h1 {
+  color: #404040;
+  font-size: 40px;
+  font-weight: 500;
+}
+#blog-body > div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: blog;
+}
+#blog-body > div > p {
+  color: rgba(111, 110, 110, 0.84);
+  font-size: 25px;
+  font-weight: 500;
+}
+#blog-body > p {
+  color: #464343;
+  font-size: 28px;
+  font-weight: 400;
+}
+#cards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+#card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 431.532px;
+  background: linear-gradient(
+    117deg,
+    rgba(249, 247, 247, 0.1) 19.16%,
+    rgba(249, 247, 247, 0.4) 80.19%
+  );
+  box-shadow: 0px 2px 20px -1px rgba(0, 0, 0, 0.25);
+  margin-top: 30px;
+}
+#card > img {
+  width: 100%;
+}
+#card-body {
+  padding: 15px;
+}
+#card-body > h1 {
+  color: #4a4848;
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+#card-body > div {
+  display: flex;
+  justify-content: space-between;
+}
+#card-body > div > p {
+  color: rgba(111, 110, 110, 0.84);
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+#card-body > p {
+  color: #464343;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+#card-body > a {
+  display: block;
+  color: #213949;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: right;
+  text-decoration: none;
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-image: url("Rectangle\ 31.jpg");
+  border-radius: 30px;
+  width: 90vw;
+  height: 707px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+  align-items: center;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+footer > img {
+  height: 353px;
+}
+footer > div {
+  width: 424.656px;
+}
+footer > div > button {
+  border-radius: 23.5px;
+  background: linear-gradient(92deg, #2c56aa 14.14%, #3bb08b 84.43%);
+  box-shadow: 2px 3px 2px 0px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  font-size: 30px;
+  font-weight: 500;
+  border: none;
+  padding: 0px 20px;
+  margin-top: 50px;
 }
